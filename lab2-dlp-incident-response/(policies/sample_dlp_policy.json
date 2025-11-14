@@ -1,0 +1,25 @@
+{
+  "name": "CreditCard_DLP_Policy",
+  "state": "enabled",
+  "description": "Detects and blocks sharing of credit card numbers via email and OneDrive.",
+  "rules": [
+    {
+      "name": "Credit Card Data Detection",
+      "priority": 1,
+      "actions": ["block", "notify"],
+      "conditions": {
+        "contentContainsSensitiveInformation": [
+          {
+            "id": "CreditCardNumber",
+            "confidenceLevel": "85"
+          }
+        ]
+      },
+      "userNotifications": {
+        "email": true,
+        "policyTip": true
+      }
+    }
+  ],
+  "locations": ["Exchange", "SharePoint", "OneDrive"]
+}
