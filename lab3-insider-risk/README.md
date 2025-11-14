@@ -18,7 +18,7 @@ By completing this lab, you will:
 ## 🏗️ Lab Setup Steps
 
 ### **Step 1: Enable Insider Risk Management**
-1. Sign in to the **Microsoft Purview Compliance Portal** → `https://compliance.microsoft.com`.
+1. Sign in to the **Microsoft Purview Compliance Portal** → `https://purview.microsoft.com`.
 2. Navigate to **Solutions → Insider Risk Management**.
 3. If prompted, enable the solution for your tenant.  
 4. Assign yourself the **Insider Risk Management Admin** and **Investigators** roles under **Permissions → Role Groups**.
